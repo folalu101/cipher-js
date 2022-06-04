@@ -4,25 +4,31 @@
 
 $(document).ready(function(){
 
-    // let name = prompt("Write your name");
+    //1) let name = prompt("Write your name");
 let sentence = prompt("write a sentence on what you need for Ileya ");
 
 
 console.log(sentence);
 
 
-// create a function that will take the first and last letter of the sentence, capitalize them, and return this as a new string.
-
-function letter(sentence){
-    let firstletter = sentence.charAt(0).toUpperCase();
+//2) create a function that will take the first and last letter of the sentence, capitalize them, and return this as a new string.
+let firstletter = sentence.charAt(0).toUpperCase();
     let lastletter = sentence.charAt(sentence.length -1).toUpperCase();
     let str = firstletter.concat(lastletter);
+
+function letter(sentence){
     
     return str;
 }
 console.log(letter(sentence));
 
-// Create another function that will reverse the order of these two letters and return the result.
+//3) Create another function that will reverse the order of these two letters and return the result.
+
+
+
+
+
+// 4) Create another function that will reverse the order of these two letters and return the result.
 
 function rev(sentence){
     let rev1 = sentence.split("");
@@ -34,7 +40,7 @@ function rev(sentence){
 }
 console.log(rev(sentence));
 
-// Add code to your third function to concatenate the new two-letter string together with the original phrase. It should add the two-letter string at the end 
+//5) Create a third function that calls the other two functions you've just created.
 
 function call(sentence){
     let Q1 = rev(sentence);
