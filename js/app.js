@@ -34,6 +34,18 @@ function rev(sentence){
 }
 console.log(rev(sentence));
 
+// Create a third function that calls the other two functions you've just created. 
+
+function call(sentence){
+    let Q1 = rev(sentence);
+    let Q2 = letter(sentence);
+    let Q3 = Q1.concat(Q2);
+
+
+    return Q3;
+
+}
+console.log(call(sentence));
 
 
 
