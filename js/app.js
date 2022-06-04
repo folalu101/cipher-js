@@ -22,6 +22,17 @@ function letter(sentence){
 }
 console.log(letter(sentence));
 
+// Create another function that will reverse the order of these two letters and return the result.
+
+function rev(sentence){
+    let rev1 = sentence.split("");
+    let rev2 = rev1.reverse();
+    let rev4 = rev2.join("");
+
+    return rev4;
+
+}
+console.log(rev(sentence));
 
 
 
