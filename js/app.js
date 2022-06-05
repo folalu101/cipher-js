@@ -7,30 +7,46 @@ $(document).ready(function(){
     //1) let name = prompt("Write your name");
 let sentence = prompt("write a sentence on what you need for Ileya ");
 
-
+// prompt my sentence
 console.log(sentence);
+// to get the first letter
+let firstletter = sentence.charAt(0).toUpperCase();
+// to get the last letter
+let lastletter = sentence.charAt(sentence.length -1).toUpperCase();
 
+// to concat first and last
+let firstandlast = firstletter.concat(lastletter);
+
+// to count number of  and round down
+let  countandround = (sentence.length).Math.round();
+
+
+// to reverse the first and last letter
+// let reversal = (firstletter.concat).reverse().lastletter.join("");
 
 //2) create a function that will take the first and last letter of the sentence, capitalize them, and return this as a new string.
-let firstletter = sentence.charAt(0).toUpperCase();
-    let lastletter = sentence.charAt(sentence.length -1).toUpperCase();
-    let str = firstletter.concat(lastletter);
 
-function letter(sentence){
+function letter(){
+    return firstandlast;
     
-    return str;
 }
-console.log(letter(sentence));
+// invoke my fucntion
+console.log(letter());
 
 //3) Create another function that will reverse the order of these two letters and return the result.
+// function revfirstlast(sentence){
+// return reversal;
+
+// }
+// console.log(revfirstlast(sentence));
 
 
 
 
 
 // 4) Create another function that will reverse the order of these two letters and return the result.
-
-function rev(sentence){
+// mine
+function rev(){
     let rev1 = sentence.split("");
     let rev2 = rev1.reverse();
     let rev4 = rev2.join("");
@@ -38,7 +54,7 @@ function rev(sentence){
     return rev4;
 
 }
-console.log(rev(sentence));
+console.log(rev());
 
 //5) Create a third function that calls the other two functions you've just created.
 
@@ -51,6 +67,14 @@ function call(sentence){
 
 }
 console.log(call(sentence));
+
+// 6) Create a fourth function to count the number of letters in the original sentence, divide it by two (rounding down if necessary), and output the letter at this index. Concatenate this letter at the beginning of the original sentence.
+
+function counting(){
+   return countandround;
+
+}
+console.log(counting());
 
 
 
