@@ -17,8 +17,7 @@ let lastletter = sentence.charAt(sentence.length -1).toUpperCase();
 // to concat first and last
 let firstandlast = firstletter.concat(lastletter);
 
-// to count number of  and round down
-let  countandround = (sentence.length).Math.round();
+// let  countandround = (sentence.length).Math.round();
 
 
 // to reverse the first and last letter
@@ -70,11 +69,31 @@ console.log(call(sentence));
 
 // 6) Create a fourth function to count the number of letters in the original sentence, divide it by two (rounding down if necessary), and output the letter at this index. Concatenate this letter at the beginning of the original sentence.
 
-function counting(){
-   return countandround;
+function counting(str){
+    // to count letter
+   let count = str.length;
+    // To divide our count by 2
+    let divide = count/2;
+    // to round down our letter
+    let roundDown = Math.floor(divide);
+    // To find the postion our letter
+    let position = sentence.charAt(roundDown);
+    // Concatenate this letter at the beginning of the original sentence
+    // let con = postion.concat(sentence,reverseFirstandLast,FirstandLast)
+    // let con = position.concat(sentence);
+    // return con;
+    // reverse first and last letter of the sentence
+    // let rev = reverseFirstandLast(firstandLast);
 
+    // concatenate
+    let result = position.concat(sentence, rev);
+    let finalResult = reverseFirstandLast(result);
+    return finalResult;
+    
+    
+ 
 }
-console.log(counting());
+console.log(counting(str));
 
 
 
